@@ -47,5 +47,7 @@ def bandeira_japao(height):
 # Checagem de escopo
 # Usando a varivel nativa __name__ para validar se retornar o módulo atual
 if __name__ == "__main__":
+	# Atribuimos a função para variavel passando o parametro de altura
 	bandeira = bandeira_japao(700)
+	# Metodo para exibir
 	bandeira.show()
