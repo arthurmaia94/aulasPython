@@ -12,14 +12,14 @@ OUTPUT_FOLDER="output"
 def in_path(filename):
 	return os.path.join(INPUT_FOLDER, filename)
 
-# inicio da função para desenhar a imagem
+# Inicio da função para desenhar a imagem
 def triangle(size):
 	white = (255,255,255) # atribuição o RGB, equivalente a cor branca para variavel
 	black = (0,0,0) # atribuição o RGB, equivalente a cor preta para variavel
-	# Insância da classe Image (PIL) recebendo como parametro as variaveis para dimensçoes e cor branca de fundo
+	# Instância da classe Image (PIL) recebendo como parametro as variaveis para dimensoes e cor branca de fundo
 	image = Image.new("RGB", (size, size), white)
 	
-	# Loop reponsavel pelo desenho da area que devera ser impressa na cor preta
+	# Loop responsavel pelo desenho da area que devera ser impressa na cor preta
 	for x in range(size):
 		for y in range(size):
 			if x < y:
@@ -34,7 +34,7 @@ def bandeira_japao(height):
 	r = 3*height//10
 	c = (width//2, height//2)
 	
-	# Insância da classe Image (PIL) recebendo como parametro as variaveis para dimensçoes e cor branca
+	# Instância da classe Image (PIL) recebendo como parametro as variaveis para dimensoes e cor branca de fundo
 	image = Image.new("RGB", (width, height), WHITE)
 	
 	# Loop para calcular os raios do circulo que deverá ser impresso
